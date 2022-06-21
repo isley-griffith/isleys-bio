@@ -1,5 +1,6 @@
 import React from "react";
 import profile from "../images/profilepic.png";
+import { IconContext } from "react-icons";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 function Card() {
@@ -25,12 +26,11 @@ function Card() {
               style={{ color: "#F1F1F9" }}
               className="text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2 font-mono"
             >
-              Software Developer at
+              Software Developer at{" "}
               <a
-                className="text-purple font-mono hover:font-bold"
+                className="font-mono hover:font-bold underline"
                 href="https://oliveai.com/?utm_campaign=Strategic_22_AlwaysOn-Awareness_PP&utm_source=google&utm_medium=cpc&utm_term=oliveai&gclid=Cj0KCQjw2MWVBhCQARIsAIjbwoOTNC3hVtFdfg2ibiXnEs0e7o9a3sK9l7nXQV8DEV1xemz0TYSizc8aAuqpEALw_wcB"
               >
-                {" "}
                 Olive
               </a>
             </p>
@@ -41,15 +41,19 @@ function Card() {
               className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
               href="https://github.com/isley-griffith"
             >
-              <FaGithub />
-              <span class="sr-only">Github</span>
+              <IconContext.Provider value={{ color: "#F1F1F9" }}>
+                <FaGithub />
+                <span className="sr-only">Github</span>
+              </IconContext.Provider>
             </a>
             <a
               className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
               href="https://www.linkedin.com/in/isley-griffith-683761180"
             >
-              <FaLinkedin />
-              <span class="sr-only">Linkedin</span>
+              <IconContext.Provider value={{ color: "#F1F1F9" }}>
+                <FaLinkedin />
+                <span className="sr-only">Linkedin</span>
+              </IconContext.Provider>
             </a>
           </div>
         </div>

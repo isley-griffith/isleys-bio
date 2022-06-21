@@ -1,5 +1,7 @@
 import React from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { BiChevronDownCircle } from "react-icons/bi";
+import { IconContext } from "react-icons";
+
 import ScrollIntoView from "react-scroll-into-view";
 
 function About() {
@@ -22,9 +24,11 @@ function About() {
       </div>
 
       <ScrollIntoView selector="#tech">
-        <div class="mx-auto p-20">
-          <FaChevronDown class="animate-bounce mx-auto text-3xl" />
-        </div>
+        <IconContext.Provider value={{ color: "#F1F1F9" }}>
+          <div className="mx-auto p-20">
+            <BiChevronDownCircle className="animate-bounce mx-auto text-3xl" />
+          </div>
+        </IconContext.Provider>
       </ScrollIntoView>
     </div>
   );
