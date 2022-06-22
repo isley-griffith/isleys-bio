@@ -15,6 +15,7 @@ function App() {
   });
   return (
     <div
+      id="app"
       className="min-h-screen py-10 px-3 sm:px-5"
       style={{ backgroundColor: "#1B1B3A" }}
     >

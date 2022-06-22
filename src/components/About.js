@@ -10,13 +10,13 @@ function About() {
       <div className="max-w-4xl mt-24 mx-auto pb-24 pt-12">
         <p
           style={{ color: "#F1F1F9" }}
-          className="text-2xl text-black  md:text-4xl font-bold text-center"
+          className="text-2xl text-black  md:text-4xl text-center font-mono"
         >
-          Yo! 👋
+          Yo!👋
         </p>
         <p
           style={{ color: "#F1F1F9" }}
-          className="text-base text-left md:text-center text-gray-500 leading-relaxed mt-4 justify-center"
+          className="text-base text-left md:text-center text-gray-500 leading-relaxed mt-4 justify-center font-mono"
         >
           I'm a passionate React developer. I enjoy playing guitar, video games
           in my free time, and making interesting personal programming projects.

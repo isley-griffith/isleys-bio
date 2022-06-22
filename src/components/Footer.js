@@ -1,7 +1,9 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { FaRegEnvelope } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { FaRegEnvelope } from "react-icons/fa";
+import { BsChevronCompactUp } from "react-icons/bs";
+import ScrollIntoView from "react-scroll-into-view";
 
 function Footer() {
   return (
@@ -29,7 +31,7 @@ function Footer() {
         </a>
       </div>
       <div className="flex align-center justify-center mt-4">
-        <p style={{ color: "#F1F1F9" }} className="text-black mb-4">
+        <p style={{ color: "#F1F1F9" }} className="text-black mb-4 font-mono">
           Made by{" "}
           <a
             style={{ color: "#F1F1F9" }}
@@ -40,6 +42,17 @@ function Footer() {
           </a>
         </p>
       </div>
+
+      <ScrollIntoView selector="#app">
+        <div className="flex align-center justify-center mt-4">
+          <div
+            style={{ color: "#F1F1F9" }}
+            className="shadow-xl rounded-full animate-pulse mx-auto p-20 font-mono flex cursor-pointer"
+          >
+            Back to top
+          </div>
+        </div>
+      </ScrollIntoView>
     </div>
   );
 }

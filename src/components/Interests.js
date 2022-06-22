@@ -10,32 +10,36 @@ function Interests() {
     <div className="max-w-4xl mx-auto justify-center py-12" id="interests">
       <p
         style={{ color: "#F1F1F9" }}
-        className="text-2xl text-black  md:text-4xl font-bold text-center pt-4"
+        className="text-2xl text-black  md:text-4xl font-bold text-center pt-4 font-mono"
       >
         Interests
       </p>
 
       <div className="flex flex-wrap justify-center pt-2">
-        <div className="flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52">
-          <div className="flex">
-            <IconContext.Provider value={{ color: "#F1F1F9" }}>
-              <FaGuitar className="mx-auto text-4xl" />
-            </IconContext.Provider>
+        <div className="w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52">
+          <div className="flex-col">
+            <div className="flex">
+              <IconContext.Provider value={{ color: "#F1F1F9" }}>
+                <FaGuitar className="mx-auto text-4xl" />
+              </IconContext.Provider>
+            </div>
+            <p
+              style={{ color: "#F1F1F9" }}
+              className="mt-6 text-xl font-semibold text-center mb-2 font-mono"
+            >
+              Guitar
+            </p>
           </div>
-          <p
-            style={{ color: "#F1F1F9" }}
-            className="mt-6 text-xl font-semibold text-center mb-2 font-mono"
-          >
-            Guitar
-          </p>
-          <a href="https://www.instagram.com/isleyguitar/">
-            <IconContext.Provider value={{ color: "#F1F1F9" }}>
-              <AiOutlineInstagram
-                className="mx-auto text-4xl"
-                onClick={() => {}}
-              />
-            </IconContext.Provider>
-          </a>
+          <div className="relative">
+            <a href="https://www.instagram.com/isleyguitar/">
+              <IconContext.Provider value={{ color: "#F1F1F9" }}>
+                <AiOutlineInstagram
+                  className="absolute -left-10 mx-auto text-4xl animate-pulse pt-2 p-0"
+                  onClick={() => {}}
+                />
+              </IconContext.Provider>
+            </a>
+          </div>
         </div>
         <div className="flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52">
           <div className="flex">
