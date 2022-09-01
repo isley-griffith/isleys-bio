@@ -31,12 +31,12 @@ function Interests() {
             </p>
           </div>
           <div className="relative">
-            <a href="https://www.instagram.com/isleyguitar/">
+            <a
+              href="https://www.instagram.com/isleyguitar/"
+              target="noreferrer"
+            >
               <IconContext.Provider value={{ color: "#F1F1F9" }}>
-                <AiOutlineInstagram
-                  className="absolute -left-10 mx-auto text-4xl animate-pulse pt-2 p-0"
-                  onClick={() => {}}
-                />
+                <AiOutlineInstagram className="absolute -left-10 mx-auto text-4xl animate-pulse pt-2 p-0" />
               </IconContext.Provider>
             </a>
           </div>
