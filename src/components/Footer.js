@@ -2,12 +2,11 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { FaRegEnvelope } from "react-icons/fa";
-import { BsChevronCompactUp } from "react-icons/bs";
 import ScrollIntoView from "react-scroll-into-view";
 
 function Footer() {
   return (
-    <div className="py-5 border-t-3/2">
+    <div className="">
       <div className="flex align-center justify-center mt-4">
         <a
           className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
